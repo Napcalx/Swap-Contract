@@ -13,24 +13,3 @@ interface IERC20 {
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
     event Minted (address to, uint value);
 }
-
-
-interface IUniswap{
-    function swapTokensForExactTokens(
-        uint amountOut,
-        uint amountInMax,
-        address[] calldata path,
-        address to,
-        uint deadline
-    ) external returns (uint[] memory amounts);
-}
-
-interface  IUniswapV2Router02(uniswapRouter).addLiquidity(tokenA,
-    tokenB,
-    amountA,
-    amountB,
-    0,
-    0,
-    msg.sender,
-    block.timestamp
-);
