@@ -24,3 +24,13 @@ interface IUniswap{
         uint deadline
     ) external returns (uint[] memory amounts);
 }
+
+interface  IUniswapV2Router02(uniswapRouter).addLiquidity(tokenA,
+    tokenB,
+    amountA,
+    amountB,
+    0,
+    0,
+    msg.sender,
+    block.timestamp
+);
