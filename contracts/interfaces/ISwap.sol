@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity 0.8.19;
 
 interface ISwap {
     function addLiquidity (uint256 amountA, uint256 amountB) external;

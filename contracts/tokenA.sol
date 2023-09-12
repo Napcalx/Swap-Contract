@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 
-import {IERC20} from "./interfaces/IFactory.sol";
+import { IERC20 } from "./interfaces/IFactory.sol";
 
 contract ERC20 is IERC20 {
     mapping(address => uint256) _balance;

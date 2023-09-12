@@ -6,7 +6,7 @@ require('dotenv').config()
 const config: HardhatUserConfig = {
   solidity: '0.8.19',
   networks: {
-    ETH: {
+    sepolia: {
       url: process.env.URL,
       //@ts-ignore
       accounts: [process.env.ACCOUNTS],
@@ -19,5 +19,6 @@ const config: HardhatUserConfig = {
     apiKey: process.env.APIKEY,
   },
 }
+
 
 export default config

@@ -13,6 +13,7 @@ async function main () {
 
   console.log("Contract Deployed at:", TokenA.target);
   console.log("COntract Deployed at:", TokenB.target);
+
 };
 
 // We recommend this pattern to be able to use async/await everywhere

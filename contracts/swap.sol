@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 import {IERC20} from "./interfaces/IFactory.sol";
-
+ 
 contract Swap {
     address tokenA;
     address tokenB;
@@ -48,11 +48,11 @@ contract Swap {
     totalRes = _tokenARes * _tokenBRes;
    }
 
-   function TokenAReceive(uint amountIn, uint amountOutMin) external view returns (uint amountToReceive) {
+   function TokenAReceive(uint amountIn /*uint amountOutMin*/) external view returns (uint amountToReceive) {
     amountToReceive = tokenARes - (totalRes / (tokenBRes - amountIn));
   }
 
-   function TokenBReceive(uint amountIn, uint amountOutMin) external view returns (uint amountToReceive) {
+   function TokenBReceive(uint amountIn /*uint amountOutMin*/) external view returns (uint amountToReceive) {
     amountToReceive = tokenBRes - (totalRes / (tokenARes - amountIn));
    }
 
